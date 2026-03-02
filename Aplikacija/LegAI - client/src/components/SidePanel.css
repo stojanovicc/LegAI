@@ -1,0 +1,78 @@
+.sidepanel-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.35);
+  backdrop-filter: blur(3px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  z-index: 40;
+}
+
+.sidepanel-overlay--open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sidepanel {
+  position: fixed;
+  top: 0;
+  right: -420px;
+  width: 420px;
+  height: 100vh;
+  background: #ffffff;
+  border-left: 1px solid #e5e7eb;
+  box-shadow: -8px 0 30px rgba(15, 23, 42, 0.25);
+  display: flex;
+  flex-direction: column;
+  transition: right 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  z-index: 50;
+}
+
+.sidepanel--open {
+  right: 0;
+}
+
+.sidepanel-header {
+  padding: 14px 18px;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidepanel-header h2 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111827;
+}
+
+.sidepanel-close {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+.sidepanel-close:hover {
+  background: #e5e7eb;
+}
+
+.sidepanel-content {
+  padding: 14px 18px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+@media (max-width: 600px) {
+  .sidepanel {
+    width: 100%;
+  }
+}
