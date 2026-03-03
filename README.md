@@ -81,13 +81,17 @@ Aplikacija je razvijena kao **client-server** sistem:
 ## ⚙️ Pokretanje aplikacije
 
 ### 🖥️ Backend
-- cd AppAI
-- dotnet build
-- dotnet run --project AppAI.Api
+```bash
+cd AppAI
+dotnet build
+dotnet run --project AppAI.Api
+```
 
 ### 🖥️ Frontend
-- npm install
-- npm run dev
+```bash
+npm install
+npm run dev
+```
 
 ---
 
@@ -97,3 +101,8 @@ Aplikacija je razvijena kao **client-server** sistem:
 - Višejezička podrška
 - Naprednije AI funkcije za analizu teksta i predlog izmena
 - Povezivanje sa pravnim registrima i javno dostupnim servisima
+
+---
+
+## 👩‍💻 Autor
+Anđela Stojanović
